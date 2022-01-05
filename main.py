@@ -10,6 +10,7 @@ def hello_world():
 	string = """<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"><table style="border: 1px solid black;overflow-wrap: break-word;font-family: 'Rubik', sans-serif;font-size: 24px;">
+<link rel="shortcut icon" type="image/icon" href="image.ico">
   <tr>
     <th>Name</th>
 		<th>Status</th>
@@ -18,11 +19,8 @@ def hello_world():
 		<th>Description</th>
   </tr>
 <script>document.title="TASKS";
-var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-link.type = 'image/png';
-link.rel = 'shortcut icon';
-link.href = 'https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico';
-document.getElementsByTagName('head')[0].appendChild(link);
+
+
 </script>
   """
 	for i in range(len(tasks)):

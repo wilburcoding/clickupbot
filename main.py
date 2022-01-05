@@ -17,7 +17,13 @@ def hello_world():
 		<th>Type</th>
 		<th>Description</th>
   </tr>
-<script>document.title="TASKS"</script>
+<script>document.title="TASKS";
+var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+link.type = 'image/png';
+link.rel = 'shortcut icon';
+link.href = 'https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico';
+document.getElementsByTagName('head')[0].appendChild(link);
+</script>
   """
 	for i in range(len(tasks)):
 		#print(tasks[i])
